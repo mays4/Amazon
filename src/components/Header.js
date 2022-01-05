@@ -45,7 +45,7 @@ const Header = () => {
           <div onClick={!session ? signIn : signOut} className="link">
             <p>
               {session
-                ? `Hello ${session.user.name.split(" ").slice(0, -1).join(" ")}`
+                ? `Hello ${session.user.name}`
                 : "sign In "}
             </p>
             <p className="font-extrabold md:text-sm">Account & List</p>
