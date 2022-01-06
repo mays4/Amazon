@@ -2,5 +2,7 @@ module.exports = {
   images: {
     domains: ['links.papareact.com','fakestoreapi.com'],
   },
-  trailingSlash: true
+  env:{
+    stripe_pablic_key : process.env.STRIPE_PUBLIC_KEY
+  }
 };
